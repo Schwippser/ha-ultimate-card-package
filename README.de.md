@@ -1,6 +1,6 @@
 # HA Ultimate Card Package
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
+![Marketplace](https://img.shields.io/badge/Marketplace-Custom-orange.svg)
 ![Status](https://img.shields.io/badge/status-beta-yellow)
 
 Eine Lovelace-Ressource, 17 Kartentypen, ein visueller Editor. Alle Karten teilen Styling, Status-Farben, Zusatzwerte, Aktionen und Designs.
@@ -23,12 +23,14 @@ Bar · Battery · Climate · Clock · Clock (Musik) · Energy Values · Gauge ·
 - Horizontales und vertikales Layout für viele Kartentypen
 - Standardsprache Englisch; die Sprache von Home Assistant wird über Übersetzungsdateien übernommen (Deutsch liegt bei)
 
-## Installation über HACS (benutzerdefiniertes Repository)
+## Installation über den Marketplace (benutzerdefiniertes Repository)
 
-1. In Home Assistant **HACS → ⋮ → Benutzerdefinierte Repositories** öffnen.
+[![Open your Home Assistant instance and open the repository inside the Marketplace.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Schwippser&repository=ha-ultimate-card-package&category=plugin)
+
+1. In Home Assistant **MARKETPLACE → ⋮ → Benutzerdefinierte Repositories** öffnen.
 2. `https://github.com/Schwippser/ha-ultimate-card-package` mit dem Typ **Dashboard** (früher „Lovelace“) hinzufügen.
 3. **HA Ultimate Card Package** suchen und installieren (für Beta-Versionen „Beta-Versionen anzeigen“ aktivieren).
-4. Browser neu laden (Strg+F5). HACS trägt die Ressource automatisch ein.
+4. Browser neu laden (Strg+F5). Der Marketplace trägt die Ressource automatisch ein.
 
 ## Manuelle Installation
 
