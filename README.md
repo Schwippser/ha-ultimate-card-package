@@ -34,7 +34,7 @@ Bar · Battery · Climate · Clock · Clock (Music) · Energy Values · Gauge ·
 
 ## Manual installation
 
-1. Download `ha-ultimate-card-package.zip` from the latest [release](../../releases) and extract it to `config/www/ha-ultimate-card-package/` (script and `translations` folder together).
+1. Download `ha-ultimate-card-package.js` from the latest [release](../../releases) and copy it to `config/www/ha-ultimate-card-package/`.
 2. Add the resource `/local/ha-ultimate-card-package/ha-ultimate-card-package.js` of type *JavaScript module* (Settings → Dashboards → ⋮ → Resources).
 3. Reload the browser (Ctrl+F5).
 
@@ -58,7 +58,7 @@ A full German manual is in [`docs/`](docs/HA-Ultimate-Card-Package-Dokumentation
 
 ## Translations
 
-English is the default. Translations live in `translations/<lang>.json` (flat `"English text": "translation"`). The language of the Home Assistant user is used; if there is no file, English is shown. To add a language copy `translations/de.json`, translate the values and open a pull request.
+English is the default. German is built in. Further languages are loaded from an optional `translations/<lang>.json` next to the script (flat `"English text": "translation"`). The language of the Home Assistant user is used; if there is no file, English is shown. To add a language, copy `translations/de.json`, translate the values and open a pull request.
 
 ## Known limitations (beta)
 

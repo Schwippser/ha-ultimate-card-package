@@ -34,7 +34,7 @@ Bar · Battery · Climate · Clock · Clock (Musik) · Energy Values · Gauge ·
 
 ## Manuelle Installation
 
-1. `ha-ultimate-card-package.zip` vom neuesten [Release](../../releases) laden und nach `config/www/ha-ultimate-card-package/` entpacken (Skript und Ordner `translations` zusammen).
+1. `ha-ultimate-card-package.js` vom neuesten [Release](../../releases) laden und nach `config/www/ha-ultimate-card-package/` kopieren.
 2. Ressource `/local/ha-ultimate-card-package/ha-ultimate-card-package.js` vom Typ *JavaScript-Modul* hinzufügen (Einstellungen → Dashboards → ⋮ → Ressourcen).
 3. Browser neu laden (Strg+F5).
 
@@ -58,7 +58,7 @@ Ein ausführliches Handbuch liegt unter [`docs/`](docs/HA-Ultimate-Card-Package-
 
 ## Übersetzungen
 
-Standard ist Englisch. Übersetzungen liegen in `translations/<sprache>.json` (flach: `"Englischer Text": "Übersetzung"`). Verwendet wird die Sprache des Home-Assistant-Benutzers; fehlt die Datei, erscheint Englisch. Für eine neue Sprache `translations/de.json` kopieren, die Werte übersetzen und einen Pull Request öffnen.
+Standard ist Englisch. Deutsch ist eingebaut. Weitere Sprachen werden aus einer optionalen Datei `translations/<sprache>.json` neben dem Skript geladen (flach: `"Englischer Text": "Übersetzung"`). Verwendet wird die Sprache des Home-Assistant-Benutzers; fehlt die Datei, erscheint Englisch. Für eine neue Sprache `translations/de.json` kopieren, die Werte übersetzen und einen Pull Request öffnen.
 
 ## Bekannte Einschränkungen (Beta)
 

@@ -1,6 +1,5 @@
 {
   "name": "HA Ultimate Card Package",
   "render_readme": true,
-  "zip_release": true,
-  "filename": "ha-ultimate-card-package.zip"
+  "filename": "ha-ultimate-card-package.js"
 }
