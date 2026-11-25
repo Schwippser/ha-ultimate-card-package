@@ -1,7 +1,8 @@
 # HA Ultimate Card Package
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
-![Status](https://img.shields.io/badge/status-beta-yellow)
+[![Home Assistant Marketplace](https://img.shields.io/badge/Home%20Assistant-Marketplace-blue.svg)](https://www.home-assistant.io/integrations/marketplace/) ![version](https://img.shields.io/github/v/release/Schwippser/ha-ultimate-card-package?include_prereleases&label=version&color=blue) ![status](https://img.shields.io/badge/status-beta-yellow)
+
+<a href="https://www.buymeacoffee.com/tomreim0s" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me a Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 Eine Lovelace-Ressource, 21 Kartentypen, ein visueller Editor. Alle Karten teilen Styling, Status-Farben, Zusatzwerte, Aktionen und Designs.
 
@@ -21,18 +22,22 @@ Active List · Bar · Battery · BirdNET · Climate · Clock · Clock (Musik) ·
 - Zusatzwerte (weitere Entitäten/Attribute) mit eigenem Namen, Icon, Reihenfolge sowie Hintergrund, Schatten und Schriftfarbe bei an/aus
 - Tap-, Double-Tap- und Hold-Aktionen für Karte, Icon, Name und Status
 - Horizontales und vertikales Layout für viele Kartentypen
-- Standardsprache Englisch; die Sprache von Home Assistant wird über Übersetzungsdateien übernommen (Deutsch liegt bei)
+- Standardsprache Englisch; die Sprache von Home Assistant wird übernommen (Deutsch ist eingebaut, weitere Sprachen über Übersetzungsdateien)
 
-## Installation über HACS (benutzerdefiniertes Repository)
+## Installation
 
-1. In Home Assistant **HACS → ⋮ → Benutzerdefinierte Repositories** öffnen.
-2. `https://github.com/Schwippser/ha-ultimate-card-package` mit dem Typ **Dashboard** (früher „Lovelace“) hinzufügen.
+### MARKETPLACE (benutzerdefiniertes Repository)
+
+[![Open your Home Assistant instance and open this repository in the Marketplace.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Schwippser&repository=ha-ultimate-card-package&category=plugin)
+
+1. In Home Assistant **Einstellungen → Marketplace** öffnen und ein benutzerdefiniertes Repository hinzufügen (Menü **⋮ → Benutzerdefinierte Repositories**).
+2. `https://github.com/Schwippser/ha-ultimate-card-package` mit dem Typ **Dashboard** (früher „Lovelace“) eintragen.
 3. **HA Ultimate Card Package** suchen und installieren (für Beta-Versionen „Beta-Versionen anzeigen“ aktivieren).
-4. Browser neu laden (Strg+F5). HACS trägt die Ressource automatisch ein.
+4. Browser neu laden (Strg+F5). Der Marketplace trägt die Ressource automatisch ein.
 
-## Manuelle Installation
+### Manuell
 
-1. `ha-ultimate-card-package.zip` vom neuesten [Release](../../releases) laden und nach `config/www/ha-ultimate-card-package/` entpacken (Skript und Ordner `translations` zusammen).
+1. `ha-ultimate-card-package.js` vom neuesten [Release](../../releases) laden und nach `config/www/ha-ultimate-card-package/` kopieren. Es ist eine einzelne Datei, die deutsche Übersetzung ist eingebaut.
 2. Ressource `/local/ha-ultimate-card-package/ha-ultimate-card-package.js` vom Typ *JavaScript-Modul* hinzufügen (Einstellungen → Dashboards → ⋮ → Ressourcen).
 3. Browser neu laden (Strg+F5).
 
@@ -56,7 +61,7 @@ Ein ausführliches Handbuch liegt unter [`docs/`](docs/HA-Ultimate-Card-Package-
 
 ## Übersetzungen
 
-Standard ist Englisch. Übersetzungen liegen in `translations/<sprache>.json` (flach: `"Englischer Text": "Übersetzung"`). Verwendet wird die Sprache des Home-Assistant-Benutzers; fehlt die Datei, erscheint Englisch. Für eine neue Sprache `translations/de.json` kopieren, die Werte übersetzen und einen Pull Request öffnen.
+Standard ist Englisch, Deutsch ist ins Skript eingebaut. Weitere Sprachen werden aus einer optionalen `translations/<sprache>.json` neben dem Skript geladen (flach: `"Englischer Text": "Übersetzung"`). Verwendet wird die Sprache des Home-Assistant-Benutzers; fehlt eine Übersetzung, erscheint Englisch. Für eine neue Sprache `translations/de.json` aus dem Repository kopieren, die Werte übersetzen und einen Pull Request öffnen.
 
 ## Bekannte Einschränkungen (Beta)
 
