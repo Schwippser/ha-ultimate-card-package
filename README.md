@@ -1,9 +1,9 @@
 # HA Ultimate Card Package
 
-![Marketplace](https://img.shields.io/badge/Marketplace-Custom-orange.svg)
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
 ![Status](https://img.shields.io/badge/status-beta-yellow)
 
-One Lovelace resource, 17 card types, one visual editor. All cards share the same styling, status colors, extra values, actions and themes.
+One Lovelace resource, 21 card types, one visual editor. All cards share the same styling, status colors, extra values, actions and themes.
 
 > **Beta release.** Things may change between versions. Please report problems in the [issue tracker](../../issues).
 
@@ -11,7 +11,7 @@ One Lovelace resource, 17 card types, one visual editor. All cards share the sam
 
 ## Card types
 
-Bar · Battery · Climate · Clock · Clock (Music) · Energy Values · Gauge · Graph · Light · Media Player · Pi-hole · Slider · State · Switch · WashData · Weather Forecast (with optional weather warnings) · Weather Warning
+Active List · Bar · Battery · BirdNET · Climate · Clock · Clock (Music) · Energy Values · Gauge · Graph · Heatmap · Light · Media Player · Pi-hole · Power Flow · Slider · State · Switch · WashData · Weather Forecast (with optional weather warnings) · Weather Warning
 
 ## Features
 
@@ -23,18 +23,16 @@ Bar · Battery · Climate · Clock · Clock (Music) · Energy Values · Gauge ·
 - Horizontal and vertical layouts for many card types
 - English by default; follows the Home Assistant language via translation files (German included)
 
-## Installation via Marketplace (custom repository)
+## Installation via HACS (custom repository)
 
-[![Open your Home Assistant instance and open the repository inside the Marketplace.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Schwippser&repository=ha-ultimate-card-package&category=plugin)
-
-1. In Home Assistant open **MARKETPLACE → ⋮ → Custom repositories**.
+1. In Home Assistant open **HACS → ⋮ → Custom repositories**.
 2. Add `https://github.com/Schwippser/ha-ultimate-card-package` with type **Dashboard** (formerly "Lovelace").
 3. Search for **HA Ultimate Card Package**, install it (enable *Show beta versions* to get beta releases).
-4. Reload the browser (Ctrl+F5). The Marketplace registers the resource automatically.
+4. Reload the browser (Ctrl+F5). HACS registers the resource automatically.
 
 ## Manual installation
 
-1. Download `ha-ultimate-card-package.js` from the latest [release](../../releases) and copy it to `config/www/ha-ultimate-card-package/`.
+1. Download `ha-ultimate-card-package.zip` from the latest [release](../../releases) and extract it to `config/www/ha-ultimate-card-package/` (script and `translations` folder together).
 2. Add the resource `/local/ha-ultimate-card-package/ha-ultimate-card-package.js` of type *JavaScript module* (Settings → Dashboards → ⋮ → Resources).
 3. Reload the browser (Ctrl+F5).
 
@@ -58,7 +56,7 @@ A full German manual is in [`docs/`](docs/HA-Ultimate-Card-Package-Dokumentation
 
 ## Translations
 
-English is the default. German is built in. Further languages are loaded from an optional `translations/<lang>.json` next to the script (flat `"English text": "translation"`). The language of the Home Assistant user is used; if there is no file, English is shown. To add a language, copy `translations/de.json`, translate the values and open a pull request.
+English is the default. Translations live in `translations/<lang>.json` (flat `"English text": "translation"`). The language of the Home Assistant user is used; if there is no file, English is shown. To add a language copy `translations/de.json`, translate the values and open a pull request.
 
 ## Known limitations (beta)
 
